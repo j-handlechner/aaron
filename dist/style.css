@@ -183,6 +183,7 @@ p {
     padding-right: 1rem;
     padding-top: 40px;
     background-color: #363636;
+    transform: translateX(100%);
     transition: 0.5s ease-in-out transform;
   }
   #hamburger + ul li {
@@ -210,9 +211,6 @@ p {
   #hamburger[aria-label=opened] + ul {
     transform: translateX(0%);
   }
-  #hamburger[aria-label=closed] + ul {
-    transform: translateX(100%);
-  }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   footer {
@@ -234,6 +232,12 @@ p {
     display: block;
     color: #FFAD6E;
     font-family: "Source Sans Pro";
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -283,6 +287,7 @@ p {
     font-family: "Source Sans Pro";
     font-weight: 600;
     background-color: black;
+    width: max-content;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -362,6 +367,7 @@ p {
     font-family: "Source Sans Pro";
     font-weight: 600;
     background-color: transparent;
+    width: max-content;
   }
   #workshops .workshop-grid .level .quote-sign {
     width: 72px;
@@ -421,6 +427,7 @@ p {
     font-family: "Source Sans Pro";
     font-weight: 600;
     background-color: transparent;
+    width: max-content;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -468,6 +475,7 @@ p {
     font-family: "Source Sans Pro";
     font-weight: 600;
     background-color: transparent;
+    width: max-content;
     margin-left: 20px;
   }
 }
