@@ -173,6 +173,8 @@ p {
     top: 8px;
     right: 0;
   }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
   #hamburger + ul {
     text-align: right;
     position: absolute;
