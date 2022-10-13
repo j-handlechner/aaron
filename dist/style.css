@@ -383,6 +383,8 @@ p {
     align-items: center;
     margin-top: 124px;
     font-weight: 200;
+    display: block;
+    padding-top: 8px;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
