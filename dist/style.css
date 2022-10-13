@@ -102,6 +102,7 @@ table {
   text-transform: uppercase;
   font-weight: 700;
   color: #363636;
+  font-size: 1rem;
 }
 
 h1 {
@@ -116,7 +117,7 @@ h2 {
   font-size: 1.65rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, p, blockquote, a {
   font-family: "Source Sans Pro";
   font-weight: 300;
 }
@@ -132,9 +133,7 @@ h3 {
 }
 
 p {
-  font-family: "Source Sans Pro";
-  font-weight: 300;
-  font-size: 16px;
+  line-height: 1.5;
 }
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -215,6 +214,28 @@ p {
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
+  footer {
+    background-color: #363636;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  footer h4 {
+    font-size: 1.375rem;
+    color: white;
+  }
+  footer p {
+    color: white;
+    font-size: 1rem;
+  }
+  footer a {
+    padding-top: 5px;
+    display: block;
+    color: #FFAD6E;
+    font-family: "Source Sans Pro";
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
   header {
     width: 100vw;
     background-image: url("../images/hero-image-mobile-new-new-new.png");
@@ -267,6 +288,9 @@ p {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  #workshops h2, #workshops .super-headline {
+    margin-left: 20px;
+  }
   #workshops .workshop-grid {
     display: grid;
     width: 100%;
@@ -277,7 +301,7 @@ p {
     background-color: #363636;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 100px;
+    margin-top: 124px;
     padding-bottom: 50px;
   }
   #workshops .workshop-grid .level .level-icon-wrapper {
@@ -319,6 +343,7 @@ p {
     margin-top: 85px;
     font-size: 1.4rem;
     color: #ef9d5f;
+    margin-bottom: 10px;
   }
   #workshops .workshop-grid .level p {
     color: white;
@@ -339,6 +364,7 @@ p {
   #workshops .workshop-grid .level .quote-sign {
     width: 72px;
     margin-left: calc(50% - 36px + 2.5%);
+    margin-bottom: 2px;
   }
   #workshops .workshop-grid .level blockquote {
     margin-top: 5px;
@@ -354,7 +380,7 @@ p {
     background-color: #F7F7F7;
     display: grid;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 124px;
     font-weight: 200;
   }
 }
@@ -376,7 +402,8 @@ p {
     margin-top: 15px;
   }
   #about .text-content p {
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
   }
   #about .text-content a {
     color: black;
@@ -390,6 +417,54 @@ p {
     font-family: "Source Sans Pro";
     font-weight: 600;
     background-color: transparent;
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #news {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 425px;
+  }
+  #news h2 {
+    margin-bottom: 20px;
+  }
+  #news article {
+    background-color: #F7F7F7;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+  #news article:last-of-type {
+    margin-bottom: 50px;
+  }
+  #news article h3 {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #news article img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #news article p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #news article a {
+    color: black;
+    text-transform: uppercase;
+    border: #ef9d5f solid 1px;
+    padding: 12.5px 25px;
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    background-color: transparent;
+    margin-left: 20px;
   }
 }
 

@@ -1,3 +1,46 @@
 @include breakpoint(0, $mobile) {
-    
+    #news {
+        padding-top: $section-pad;
+        padding-left: $content-side-pad;
+        padding-right: $content-side-pad;
+        width: 425px;
+
+        h2 {
+            margin-bottom: $content-side-pad;
+        }
+
+        article {
+            background-color: $lightest-gray;
+            margin-bottom: 2 * $content-side-pad;
+            padding-bottom: $content-side-pad;
+
+            &:last-of-type {
+                margin-bottom: $section-pad;
+            }
+
+            h3 {
+                margin-left: $content-side-pad;
+                padding-top: $content-side-pad / 2;
+                padding-bottom: $content-side-pad / 2;
+            }
+
+            img {
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            p {
+                padding-top: $content-side-pad;
+                padding-left: $content-side-pad;
+                padding-right: $content-side-pad;
+            }
+
+            a {
+                @include button(black);
+                margin-left: $content-side-pad;
+
+            }
+        }
+    }
 } 
