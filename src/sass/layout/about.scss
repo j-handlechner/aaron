@@ -1,0 +1,31 @@
+@include breakpoint(0, $mobile) {
+    #about {
+        padding-top: $section-pad;
+        padding-bottom: $section-pad;
+
+        background-color: $about-lightyellow;
+
+        img {
+            height: clamp(300px, 50vh, 750px);
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text-content {
+            margin: 0 $content-side-pad;
+
+            .super-headline {
+                margin-top: 15px;
+            }
+    
+            p {
+                margin-top: 15px;
+            }
+    
+            a {
+                @include button(black);
+            }
+        }
+       
+    }
+}

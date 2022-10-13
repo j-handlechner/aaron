@@ -1,0 +1,45 @@
+@include breakpoint(0, $mobile) {
+    header {
+        width: 100vw;
+        background-image: url("../images/hero-image-mobile-new-new-new.png");
+        background-size: cover;
+        aspect-ratio: 1 / 1;
+        position: relative;
+
+        a {
+            text-decoration: none;  
+            width: fit-content;
+            display: block;
+            
+            h1 {
+                color: white;
+                font-size: rem(16);
+                padding-top: 1rem;
+                padding-left: 1rem;
+                width: fit-content;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+
+    .headline-button-wrapper {
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        padding-right: 8%;
+        width: 50%;
+
+        h2 {
+            color: $primary;
+            font-size: clamp(1.5rem, 8vw, 2.5rem);
+        }
+
+        a {
+            @include button(white, black);
+        }
+    }
+
+    }
+}

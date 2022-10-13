@@ -1,0 +1,13 @@
+@mixin button($textcolor: white, $background: transparent) {
+    color: $textcolor;
+    text-transform: uppercase;
+    border: $primary solid 1px;
+    padding: 12.5px 25px;
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    background-color: $background;
+}
