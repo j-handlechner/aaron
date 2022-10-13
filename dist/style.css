@@ -255,6 +255,7 @@ p {
     padding-top: 1rem;
     padding-left: 1rem;
     width: fit-content;
+    letter-spacing: 0.24px;
   }
   header a h1 strong {
     font-weight: 600;
