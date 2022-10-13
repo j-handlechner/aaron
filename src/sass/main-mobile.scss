@@ -1,5 +1,5 @@
 @include breakpoint(0, $mobile) {
-    body {
+    .hide-overflow-x {
         width: 100vw;
         overflow-x: hidden;
     }

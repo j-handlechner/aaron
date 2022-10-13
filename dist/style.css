@@ -235,7 +235,7 @@ p {
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
-  body {
+  .hide-overflow-x {
     width: 100vw;
     overflow-x: hidden;
   }
@@ -435,7 +435,7 @@ p {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 425px;
+    max-width: 425px;
   }
   #news h2 {
     margin-bottom: 20px;
