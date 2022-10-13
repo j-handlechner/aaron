@@ -9,7 +9,7 @@
         .workshop-grid {
             display: grid;
             width: 100%;
-            grid-template-columns: 95% 5%;
+            grid-template-columns: 94% 6%;
 
             .level {
                 grid-column: 1 / span 1;
@@ -17,7 +17,7 @@
                 padding-left: $content-side-pad;
                 padding-right: $content-side-pad;
                 margin-top: $grid-spacing;
-                padding-bottom: 50px;
+                padding-bottom: 1.5 * $content-side-pad;
                 
                 .level-icon-wrapper {
                     width: 120px;
@@ -71,13 +71,14 @@
 
                 a {
                     @include button;
+                    margin-bottom: $content-side-pad * 1.5;
                 }
 
                 .quote-sign {
                     $quote-width: 72px;
                     width: $quote-width;
                     
-                    margin-left: calc(50% - $quote-width / 2 + 2.5%); // to account for right column in grid -> should be centered over whole row, not just the left column
+                    margin-left: calc(50% - $quote-width / 2 + 3%); // to account for right column in grid -> should be centered over whole row, not just the left column
                     margin-bottom: 2px;
                 }
 
@@ -86,7 +87,7 @@
                     text-align: center;
                     font-size: 1.40rem;
                     color: white;
-                    margin-left: 2.5vw; // to account for right column in grid -> should be centered over whole row, not just the left column
+                    margin-left: 3vw; // to account for right column in grid -> should be centered over whole row, not just the left column
                 }
             }
 

@@ -301,7 +301,7 @@ p {
   #workshops .workshop-grid {
     display: grid;
     width: 100%;
-    grid-template-columns: 95% 5%;
+    grid-template-columns: 94% 6%;
   }
   #workshops .workshop-grid .level {
     grid-column: 1/span 1;
@@ -309,7 +309,7 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 124px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   #workshops .workshop-grid .level .level-icon-wrapper {
     width: 120px;
@@ -368,10 +368,11 @@ p {
     font-weight: 600;
     background-color: transparent;
     width: max-content;
+    margin-bottom: 30px;
   }
   #workshops .workshop-grid .level .quote-sign {
     width: 72px;
-    margin-left: calc(50% - 36px + 2.5%);
+    margin-left: calc(50% - 36px + 3%);
     margin-bottom: 2px;
   }
   #workshops .workshop-grid .level blockquote {
@@ -379,7 +380,7 @@ p {
     text-align: center;
     font-size: 1.4rem;
     color: white;
-    margin-left: 2.5vw;
+    margin-left: 3vw;
   }
   #workshops .workshop-grid .apply {
     grid-column: 2/span 1;
