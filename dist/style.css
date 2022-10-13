@@ -139,6 +139,7 @@ p {
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #hamburger {
     width: 24px;
+    height: 24px;
     position: absolute;
     right: 1rem;
     top: 1rem;
