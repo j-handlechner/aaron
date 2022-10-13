@@ -184,7 +184,6 @@ p {
     padding-top: 40px;
     background-color: #363636;
     transform: translateX(100%);
-    transition: 0.5s ease-in-out transform;
   }
   #hamburger + ul li {
     margin-top: 25px;
@@ -196,6 +195,9 @@ p {
     text-decoration: none;
     font-size: 1.45rem;
     display: inline;
+  }
+  #hamburger + ul.transition {
+    transition: 0.5s ease-in-out transform;
   }
   #hamburger[aria-label=opened] .line-1 {
     transform-origin: center left;

@@ -18,4 +18,8 @@ export function init() {
             btn.ariaLabel = "closed";
         })
     }
+
+    // add class transition to classList of nav > ul -> doing this here stops weird fading-in bug from happening when opening the site
+    document.querySelector("nav > ul").classList.add("transition")
+
 }
