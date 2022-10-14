@@ -34,7 +34,7 @@
 
         h2 {
             color: $primary;
-            font-size: 1.65rem;
+            font-size: clamp(2rem, 8vw, 2.5rem);
         }
 
         a {
