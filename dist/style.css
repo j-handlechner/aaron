@@ -278,7 +278,7 @@ p {
   }
   header .headline-button-wrapper h2 {
     color: #ef9d5f;
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    font-size: 1.65rem;
   }
   header .headline-button-wrapper a {
     color: white;
