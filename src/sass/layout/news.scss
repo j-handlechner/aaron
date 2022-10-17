@@ -51,6 +51,7 @@
 @include breakpoint($mobile, $max-width) {
     #news {
         padding-top: $section-pad-desktop;
+        padding-bottom: $section-pad-desktop;
         max-width: 33vw;
 
         .news-container {
