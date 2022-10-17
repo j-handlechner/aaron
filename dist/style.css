@@ -406,16 +406,21 @@ p {
     padding-top: 8px;
   }
 }
+#about {
+  background-color: #FFF7F2;
+}
+#about img {
+  object-fit: cover;
+}
+
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #about {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #FFF7F2;
   }
   #about img {
     height: clamp(300px, 50vh, 750px);
     width: 100%;
-    object-fit: cover;
   }
   #about .text-content {
     margin: 0 20px;
@@ -440,6 +445,51 @@ p {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
+  }
+}
+@media (min-width: 37.4375rem) and (max-width: 120rem) {
+  #about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  #about .about-container {
+    display: flex;
+  }
+  #about img {
+    height: clamp(700px, 50vh, 750px);
+    width: 50vw;
+    object-fit: cover;
+    padding-left: 20px;
+  }
+  #about .text-content {
+    margin: 0 45px;
+    width: 35%;
+  }
+  #about .text-content .super-headline {
+    margin-top: 15px;
+  }
+  #about .text-content p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  #about .text-content h2 {
+    font-size: 4.7rem;
+    margin-left: -5px;
+  }
+  #about .text-content a {
+    color: black;
+    text-transform: uppercase;
+    border: #ef9d5f solid 1px;
+    padding: 12.5px 25px;
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
