@@ -41,8 +41,8 @@ header {
         background-position-x: 95%;
 
         h1 {
-            padding-top: rem(32);
-            padding-left: rem(32);
+            padding-top: $desktop-content-side-pad;
+            padding-left: $desktop-content-side-pad;
 
             font-size: rem(18);
         }

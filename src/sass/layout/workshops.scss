@@ -1,3 +1,147 @@
+#workshops {
+    .workshop-grid {
+        .level {
+            a {
+                @include button;
+            }
+        }
+    }
+}
+
+@include breakpoint($mobile + 1) {
+    #workshops {
+        padding-top: $desktop-section-pad;
+
+        .workshop-grid {
+            grid-template-columns: auto auto;
+            display: grid;
+            
+            .level {
+                display: flex;
+                width: 100%;
+
+                .step-number {
+                    font-size: rem(250);
+                    font-weight: 600;
+                    color: $dark-gray;
+                    // background-color: red;
+                    line-height: 0.6;
+                    display: flex;
+                    align-items: start;
+                    transform: translateX(19px);
+                }
+
+                .step-content {
+                    display: grid;
+                    grid-template-columns: repeat(4, 25%);
+                    background-color: $dark-gray;
+                    padding: $desktop-content-side-pad;
+
+                    .step-text {
+                        grid-column-end: span 2;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p {
+                            color: white;
+                        }
+
+                        &.config-1 {
+                            margin-right: $desktop-content-side-pad;
+                        }
+
+                        &.config-2 {
+                            
+                        }
+
+                        &.config-3 {
+                            
+                        }
+                    }
+
+                    .icon {
+                        width: 45%;
+                    }
+
+                    .background-circle {
+                        background-color: $medium-gray;
+                        width: 75%;
+                        aspect-ratio: 1 / 1;
+                        border-radius: 50%;
+                    }
+
+                    .background-circle, .icon {
+                        grid-column-end: span 1;
+                        align-self: center;
+                        justify-self: center;
+                    }
+
+                    blockquote {
+                        grid-column-end: span 1;
+                        grid-row: 1 / span 1;
+
+                        color: white;
+                        font-size: 1.75rem;
+                    }
+
+                    .quote-sign {
+                        grid-row: 1 / span 1;
+                        grid-column-end: span 1;
+                        width: 50%;
+                    }
+
+                    .background-circle, .icon {
+                        &.config-1 {
+                            grid-column-start: 3;
+                            grid-row-start: 1;
+
+                            margin-right: $desktop-content-side-pad;
+                            margin-left: $desktop-content-side-pad;
+
+                        }
+
+                        &.config-2 {
+                            
+                        }
+
+                        &.config-3 {
+                            
+                        }
+                    }
+
+
+                    blockquote, .quote-sign {
+                        &.config-1 {
+                            grid-column-start: 4;
+                            margin-left: $desktop-content-side-pad;
+                        }
+
+                        &.config-2 {
+                            
+                        }
+
+                        &.config-3 {
+                            
+                        }
+                    }
+
+                    .quote-sign {
+                        &.config-1 {
+                            justify-self: end;
+                            align-self: flex-end;
+                        }
+                    }
+                }
+            }
+
+            .apply {
+                background-color: green;
+            }
+        }
+    }
+}
+
 @include breakpoint(0, $mobile) {
     #workshops {
         padding-top: $section-pad;
@@ -79,7 +223,6 @@
                 }
 
                 a {
-                    @include button;
                     margin-bottom: $content-side-pad * 1.5;
                 }
 

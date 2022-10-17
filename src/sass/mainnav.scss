@@ -1,8 +1,8 @@
 @include breakpoint($mobile + 1) {
     nav {
         position: absolute;
-        top: rem(32);
-        right: rem(32 + 15); // + 15 to account for scrollbar
+        top: $desktop-content-side-pad;
+        right: $desktop-content-side-pad + 15px; // + 15 to account for scrollbar
 
         button {
             display: none;
