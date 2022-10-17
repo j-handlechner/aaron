@@ -1,4 +1,4 @@
-@mixin button($textcolor: white, $background: transparent) {
+@mixin button($textcolor: white, $background: transparent, $isDesktop: false) {
     color: $textcolor;
     text-transform: uppercase;
     border: $primary solid 1px;
@@ -11,4 +11,9 @@
     font-weight: 600;
     background-color: $background;
     text-align: center;
+
+    @if($isDesktop) {
+        font-size: 1.1rem;
+        padding: 15px 30px;
+    }
 }
