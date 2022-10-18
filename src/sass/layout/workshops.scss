@@ -1,9 +1,7 @@
 #workshops {
     .workshop-grid {
         .level {
-            a {
-                @include button;
-            }
+
         }
     }
 }
@@ -63,6 +61,11 @@
 
                         p {
                             color: white;
+                            font-size: 1.2rem;
+                        }
+
+                        a {
+                            @include button(white, transparent, true)
                         }
 
                         &.config-1 {
@@ -228,7 +231,8 @@
                 padding-right: $content-side-pad;
                 margin-top: $grid-spacing;
                 padding-bottom: 1.5 * $content-side-pad;
-                
+            
+
                 .level-icon-wrapper {
                     width: 120px;
                     display: flex;
@@ -289,6 +293,7 @@
                 }
 
                 a {
+                    @include button;
                     margin-bottom: $content-side-pad * 1.5;
                 }
 

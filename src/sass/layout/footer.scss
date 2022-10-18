@@ -22,7 +22,7 @@ footer {
     }
 }
 
-@include breakpoint($mobile, $max-width) {
+@include breakpoint($mobile + 1) {
 
     footer{
 

@@ -1,5 +1,4 @@
 #about {
-
     background-color: $about-lightyellow;
 
     img {
@@ -14,7 +13,7 @@
         padding-bottom: $section-pad;
 
         img {
-            height: clamp(300px, 50vh, 750px);
+            // height: clamp(300px, 50vh, 750px);
             width: 100%;
         }
 
@@ -37,21 +36,25 @@
     }
 }
 
-@include breakpoint($mobile, $max-width) {
-    #about {
+@include breakpoint($mobile + 1) {
+    .full-bleed {
+        box-shadow: 0 0 0 100vmax $about-lightyellow;
+        clip-path: inset(0 -100vmax);
+    }
 
-        padding-top: $section-pad-desktop;
-        padding-bottom: $section-pad-desktop;
+    #about {
+        padding-top: $desktop-section-pad;
+        padding-bottom: $desktop-section-pad;
 
         .about-container {
             display: flex;
         }
 
         img {
-            height: clamp(700px, 50vh, 750px);
-            width: 50vw;
+            // height: clamp(700px, 50vh, 750px);
+            width: 50%;
             object-fit: cover;
-            padding-left: $content-side-pad;
+            // padding-left: $content-side-pad;
         }
 
         .text-content {
@@ -64,17 +67,16 @@
     
             p {
                 margin-top: $content-side-pad;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             h2 {
-                font-size: 4.7rem;
-                margin-left: -5px;
+                // font-size: 4.7rem;
+                // margin-left: -5px;
             }
     
             a {
-                @include button(black);
-                font-size: 1.4rem;
+                @include button(black, transparent, true);
             }
         }
     }

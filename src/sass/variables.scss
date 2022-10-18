@@ -1,9 +1,5 @@
-// MAX-WIDTH CONTAINER SIZE
-$max-width: 1920;
-
-
 // BREAKPOINTS
-$mobile: 599;
+$mobile: 799;
 $desktop: $mobile + 1;
 
 
@@ -28,6 +24,6 @@ $section-pad: 50px;
 
 $grid-spacing: 124px;
 
-$desktop-section-pad: 75px;
+$desktop-section-pad: 100px;
 $desktop-content-side-pad: 32px;
 $desktop-content-max-width: 1500px;
