@@ -273,16 +273,17 @@ footer a {
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: end;
-    padding-right: 40px;
+    padding-right: 32px;
   }
   footer h4 {
     font-size: 2.125rem;
+    padding-bottom: 8px;
   }
   footer p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   footer a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
   }
 }
@@ -761,7 +762,7 @@ header .headline-button-wrapper a:hover {
     margin-top: 15px;
   }
   #about .text-content p {
-    margin-top: 20px;
+    margin-top: 32px;
     font-size: 1.2rem;
   }
   #about .text-content a {
@@ -846,18 +847,17 @@ header .headline-button-wrapper a:hover {
     justify-content: space-between;
   }
   #news h2 {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
   #news article {
     background-color: #F7F7F7;
     width: calc(33.3% - 32px);
   }
   #news article h3 {
-    margin-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-left: 16px;
+    padding-top: 21.3333333333px;
+    padding-bottom: 21.3333333333px;
     text-overflow: ellipsis;
-    /* Needed to make it work */
     overflow: hidden;
     white-space: nowrap;
   }

@@ -13,7 +13,6 @@
         padding-bottom: $section-pad;
 
         img {
-            // height: clamp(300px, 50vh, 750px);
             width: 100%;
         }
 
@@ -36,7 +35,7 @@
     }
 }
 
-@include breakpoint($mobile + 1) {
+@include breakpoint($desktop) {
     .full-bleed {
         box-shadow: 0 0 0 100vmax $about-lightyellow;
         clip-path: inset(0 -100vmax);
@@ -51,10 +50,8 @@
         }
 
         img {
-            // height: clamp(700px, 50vh, 750px);
             width: 50%;
             object-fit: cover;
-            // padding-left: $content-side-pad;
         }
 
         .text-content {
@@ -66,13 +63,8 @@
             }
     
             p {
-                margin-top: $content-side-pad;
+                margin-top: $desktop-content-side-pad;
                 font-size: 1.2rem;
-            }
-
-            h2 {
-                // font-size: 4.7rem;
-                // margin-left: -5px;
             }
     
             a {

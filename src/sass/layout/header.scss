@@ -32,7 +32,7 @@ header {
     }
 }
 
-@include breakpoint($mobile + 1) {
+@include breakpoint($desktop) {
     header {
         height: 80vh;
         background-image: url("../images/aaron-hero.png");

@@ -22,10 +22,9 @@ footer {
     }
 }
 
-@include breakpoint($mobile + 1) {
+@include breakpoint($desktop) {
 
-    footer{
-
+    footer {
         .footer-container {
             display: grid;
             grid-template-columns: 80% 20%;
@@ -42,19 +41,20 @@ footer {
             grid-row-start: 1;
             grid-row-end: 2;
             justify-self: end;
-            padding-right: $content-side-pad * 2;
+            padding-right: $desktop-content-side-pad;
         }
 
         h4 {
             font-size: rem(34);
+            padding-bottom: 8px;
         }
     
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     
         a {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             text-decoration: none;
         }
     }

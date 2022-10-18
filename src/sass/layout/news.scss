@@ -40,11 +40,10 @@
     }
 }
 
-@include breakpoint($mobile + 1) {
+@include breakpoint($desktop) {
     #news {
         padding-top: $desktop-section-pad;
         padding-bottom: $desktop-section-pad;
-        // max-width: 33vw;
 
         .news-container {
             display: flex;
@@ -52,37 +51,25 @@
             flex-wrap: wrap;
             width: 100%;
             column-gap: $desktop-content-side-pad;
-            // width: calc(100vw - 80px);
             justify-content: space-between;
-            
         }
 
         h2 {
-            // font-size: 4.7rem;
-            margin-bottom: $content-side-pad;
-        }
-
-        .super-headline{
-            // font-size: 1.5rem;
+            margin-bottom: $desktop-content-side-pad;
         }
 
         article {
             background-color: $lightest-gray;
-            // margin-bottom: $content-side-pad * 2;
-            // padding-bottom: $content-side-pad;
-
-            // width: calc(33.3% - $content-side-pad - 5px);
             width: calc(33.3% - $desktop-content-side-pad);
 
             h3 {
-                margin-left: $desktop-content-side-pad;
-                padding-top: $desktop-content-side-pad;
-                padding-bottom: $desktop-content-side-pad;
-                // font-size: 2.2rem;
+                margin-left: $desktop-content-side-pad / 2;
+                padding-top: $desktop-content-side-pad / 1.5;
+                padding-bottom: $desktop-content-side-pad / 1.5;
 
+                // to not make a second line of text -> instead "..." at the end of visible text
                 text-overflow: ellipsis;
 
-                /* Needed to make it work */
                 overflow: hidden;
                 white-space: nowrap;
             }
@@ -103,7 +90,6 @@
             a {
                 @include button(black, transparent, true);
                 margin-left: $desktop-content-side-pad;
-                // font-size: 1.4rem;
                 margin-bottom: $desktop-content-side-pad;
             }
         }
