@@ -334,6 +334,7 @@ header a h1 {
   color: white;
   width: fit-content;
   letter-spacing: 0.24px;
+  text-transform: uppercase;
 }
 header a h1 strong {
   font-weight: 600;
@@ -397,6 +398,7 @@ header .headline-button-wrapper a:hover {
   header a h1 {
     font-size: 1rem;
     padding-left: 1rem;
+    padding-top: 1rem;
   }
   header .headline-button-wrapper {
     bottom: 20%;
