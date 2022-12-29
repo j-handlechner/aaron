@@ -239,7 +239,7 @@ p {
 }
 footer {
   background-color: #363636;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -259,6 +259,9 @@ footer a {
 }
 
 @media (min-width: 50rem) {
+  footer {
+    padding-left: 40px;
+  }
   footer .footer-container {
     display: grid;
     grid-template-columns: 80% 20%;
