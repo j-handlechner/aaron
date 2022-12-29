@@ -1,41 +1,8 @@
-@include breakpoint(0, $mobile) {
-    #news {
-        padding-top: $section-pad;
-        max-width: 425px;
-
-        article {
-            background-color: $lightest-gray;
-            margin-bottom: 2 * $content-side-pad;
-            padding-bottom: $content-side-pad;
-
-            &:last-of-type {
-                margin-bottom: $section-pad;
-            }
-
-            h3 {
-                margin-left: $content-side-pad;
-                padding-top: $content-side-pad / 2;
-                padding-bottom: $content-side-pad / 2;
-            }
-
-            img {
-                height: 250px;
-                width: 100%;
-                object-fit: cover;
-            }
-
-            p {
-                padding-top: $content-side-pad;
-                padding-left: $content-side-pad;
-                padding-right: $content-side-pad;
-                font-size: 1.2rem;
-            }
-
-            a {
-                @include button(black);
-                margin-left: $content-side-pad;
-
-            }
+#news {
+    article {
+        a:hover {
+            background-color: $primary;
+            color: white;
         }
     }
 }
@@ -91,6 +58,55 @@
                 @include button(black, transparent, true);
                 margin-left: $desktop-content-side-pad;
                 margin-bottom: $desktop-content-side-pad;
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #news {
+        padding-top: $section-pad;
+        max-width: 425px;
+
+        h2, .super-headline {
+            margin-left: 20px;
+        }
+        
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        article {
+            background-color: $lightest-gray;
+            margin-bottom: 2 * $content-side-pad;
+            padding-bottom: $content-side-pad;
+
+            &:last-of-type {
+                margin-bottom: $section-pad;
+            }
+
+            h3 {
+                margin-left: $content-side-pad;
+                padding-top: $content-side-pad / 2;
+                padding-bottom: $content-side-pad / 2;
+            }
+
+            img {
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            p {
+                padding-top: $content-side-pad;
+                padding-left: $content-side-pad;
+                padding-right: $content-side-pad;
+                font-size: 1.2rem;
+            }
+
+            a {
+                @include button(black);
+                margin-left: $content-side-pad;
             }
         }
     }

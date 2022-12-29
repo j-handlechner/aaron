@@ -23,7 +23,6 @@ footer {
 }
 
 @include breakpoint($desktop) {
-
     footer {
         .footer-container {
             display: grid;
