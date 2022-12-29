@@ -361,7 +361,7 @@ header .headline-button-wrapper a {
   font-weight: 600;
   background-color: black;
   text-align: center;
-  transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+  transition: 0.35s ease-in-out background-color;
   font-size: 1.1rem;
   padding: 15px 30px;
 }
@@ -370,7 +370,6 @@ header .headline-button-wrapper a:hover {
 }
 header .headline-button-wrapper a:hover {
   background-color: #ef9d5f;
-  color: black;
 }
 
 @media (min-width: 50rem) {
@@ -420,7 +419,6 @@ header .headline-button-wrapper a:hover {
 }
 #workshops .workshop-grid .level .step-content .step-text a:hover {
   background-color: #ef9d5f;
-  color: black;
 }
 
 @media (min-width: 50rem) {
@@ -488,7 +486,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
     font-size: 1.1rem;
     padding: 15px 30px;
   }
@@ -681,7 +679,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
     margin-bottom: 30px;
   }
   #workshops .workshop-grid .level a:hover {
@@ -720,7 +718,6 @@ header .headline-button-wrapper a:hover {
 }
 #about .text-content a:hover {
   background-color: #ef9d5f;
-  color: white;
 }
 
 @media (min-width: 50rem) {
@@ -763,7 +760,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
     font-size: 1.1rem;
     padding: 15px 30px;
     margin-bottom: 15px;
@@ -803,7 +800,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
   }
   #about .text-content a:hover {
     cursor: pointer;
@@ -811,7 +808,6 @@ header .headline-button-wrapper a:hover {
 }
 #news article a:hover {
   background-color: #ef9d5f;
-  color: white;
 }
 
 @media (min-width: 50rem) {
@@ -866,7 +862,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
     font-size: 1.1rem;
     padding: 15px 30px;
     margin-left: 32px;
@@ -924,7 +920,7 @@ header .headline-button-wrapper a:hover {
     font-weight: 600;
     background-color: transparent;
     text-align: center;
-    transition: 0.35s ease-in-out color, 0.35s ease-in-out background-color;
+    transition: 0.35s ease-in-out background-color;
     margin-left: 20px;
   }
   #news article a:hover {
