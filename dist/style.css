@@ -113,12 +113,6 @@ h2, h3 {
   color: #ef9d5f;
 }
 
-a:link,
-a:active,
-a:visited {
-  color: white;
-}
-
 p {
   line-height: 1.5;
 }
